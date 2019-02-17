@@ -2,6 +2,7 @@ FROM alpine:3.9
 
 RUN apk add \
         bash \
+        bats \
         curl \
         docker \
         jq \
@@ -13,4 +14,3 @@ RUN apk add \
     curl -Lo container-structure-test https://storage.googleapis.com/container-structure-test/latest/container-structure-test-linux-amd64 && \
     chmod +x container-structure-test && \
     mv container-structure-test /usr/local/bin
-
