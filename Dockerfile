@@ -3,6 +3,7 @@ FROM alpine:3.9
 RUN apk add \
         bash \
         curl \
+        docker \
         jq \
         git  \
         make &&\
